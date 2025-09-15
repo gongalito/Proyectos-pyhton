@@ -17,7 +17,7 @@ from openpyxl.styles import PatternFill, Alignment, Font
 # ------------------------------
 # Configuración de rutas
 # ------------------------------
-BASE_DIR = os.getcwd()  # Carpeta "Tata Control"
+BASE_DIR = os.getcwd() 
 CONTROL_DIR = os.path.join(BASE_DIR, "CONTROL")
 DATA_DIR = os.path.join(BASE_DIR, "Data")
 PAGOS_DIR = os.path.join(BASE_DIR, "Pagos")
@@ -1566,3 +1566,4 @@ def main(fecha_pago_dict=None, log_callback=None):
 # Ejecutar directamente si se llama desde consola
 if __name__ == "__main__":
     chequeo_inicio()
+
