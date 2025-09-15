@@ -19,17 +19,19 @@ from openpyxl.styles import PatternFill, Alignment, Font
 # ------------------------------
 BASE_DIR = os.getcwd()  
 CONTROL_DIR = os.path.join(BASE_DIR, "CONTROL")
+DATA_DIR = os.path.join(BASE_DIR, "Data")
 PAGOS_DIR = os.path.join(BASE_DIR, "Pagos")
 AGREGAR_PAGO_DIR = os.path.join(BASE_DIR, "Agregar pago")
 AGREGAR_CONTROL_DIR = os.path.join(BASE_DIR, "Agregar control")
-COPIAS_DIR = os.path.join(BASE_DIR, "Copias de seguridad")
-HISTORIAL_PAGOS_DIR = os.path.join(BASE_DIR, "Historial pagos")
-HISTORIAL_CONTROL_DIR = os.path.join(BASE_DIR, "Historial control")
-AYUDA_DIR = os.path.join(BASE_DIR, "Textos de ayuda")
+COPIAS_DIR = os.path.join(DATA_DIR, "Copias de seguridad")
+HISTORIAL_PAGOS_DIR = os.path.join(DATA_DIR, "Historial pagos")
+HISTORIAL_CONTROL_DIR = os.path.join(DATA_DIR, "Historial control")
+AYUDA_DIR = os.path.join(DATA_DIR, "Textos de ayuda")
 FACTURASNOPAGADAS_DIR = os.path.join(BASE_DIR, "FacturasNoPagadas")
 OUTPUT_FILE_FACTURASNOPAGADAS = os.path.join(BASE_DIR, "FacturasNoPagadas", "FacturasNoPagadas.xlsx")
 CONTROL_FILE = os.path.join(CONTROL_DIR, "control.xlsx")
 ARCHIVO_CONTROL = os.path.join(CONTROL_DIR, "CONTROL.xlsx")
+
 
 
 
@@ -1565,3 +1567,4 @@ def main(fecha_pago_dict=None, log_callback=None):
 # Ejecutar directamente si se llama desde consola
 if __name__ == "__main__":
     chequeo_inicio()
+
