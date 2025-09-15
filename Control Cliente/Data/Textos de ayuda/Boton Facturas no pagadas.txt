@@ -1,0 +1,14 @@
+Este botón te permite generar un listado rápido de todas las facturas que aún no están completamente pagadas, para que no tengas que buscarlas manualmente en los archivos de control.
+
+1. Funcionamiento
+   - El programa recorre todos los archivos de control automáticamente.
+   - Devuelve todas las facturas que están pintadas de rojo (no pagadas) o amarillo (pagadas con diferencia).
+   - Copia todos los datos exactamente igual que en el archivo de control, evitando que tengas que buscarlos fila por fila.
+
+2. Información adicional mostrada
+   - Para las facturas con diferencia de pago, se muestra el monto de la diferencia.
+   - También se indica a qué porcentaje corresponde la diferencia respecto al monto total de la factura, para que puedas identificar fácilmente casos de retenciones o pagos parciales.
+
+Notas importantes:
+- Este botón solo lee los archivos de control, no modifica nada.
+- Es útil para revisar rápidamente las facturas pendientes y llevar un seguimiento sin alterar los archivos originales.

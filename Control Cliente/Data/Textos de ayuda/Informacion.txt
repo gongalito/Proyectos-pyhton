@@ -1,0 +1,7 @@
+Antes de realizar cualquier modificación, el programa realiza automáticamente una copia de seguridad completa de la carpeta de control.
+
+- Todas las facturas y archivos dentro de la carpeta de control se guardan en `Data/CopiasDeSeguridad`.
+- El nombre de la copia incluye la palabra "Control" y la fecha y hora en que se realizó la copia.
+- Se almacenan como máximo 15 copias de seguridad; las más antiguas se eliminan automáticamente para mantener el límite.
+- Si ya existe un archivo con el mismo nombre, el programa no lo sobrescribe. En su lugar, agrega un sufijo (1), (2), etc., asegurando que no se pierda ninguna información previa.
+- Para moverse por la interfaz del programa se puede usar el **mouse**, las **flechas del teclado** y la tecla **Enter** para seleccionar opciones y confirmar acciones.

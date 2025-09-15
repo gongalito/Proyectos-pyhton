@@ -1,0 +1,15 @@
+Este botón sirve para marcar manualmente como pagadas facturas que originalmente no lo estaban. 
+
+1. Cómo usarlo
+   - El usuario debe marcar en negrita toda la fila de la factura que desea considerar como pagada.
+   - Bajo ningún concepto se debe modificar otra cosa del archivo de control: ni colores, ni formatos, ni importes. Solo marcar en negrita las facturas deseadas.
+   - Es importante guardar el archivo antes de cerrarlo para que las modificaciones tengan efecto.
+
+2. Qué hace el programa
+   - Recorre todos los archivos de control buscando filas con texto en negrita. Esas filas son las candidatas a marcar como pagadas.
+   - Si no se encuentra ninguna factura en negrita, automáticamente se muestra una ventana informativa y el programa finaliza.
+   - Si se encuentran facturas en negrita, se muestran en pantalla con toda la información disponible: fecha, número, monto, pagado, fecha de pago, para que el usuario pueda revisarlas antes de confirmar.
+
+3. Confirmación
+   - Si el usuario confirma, el programa marca las facturas encontradas de color verde (pagadas) y quita el formato de negrita, actualizando el control.
+   - Si el usuario cancela, no se realizan modificaciones y todas las filas que estaban en negrita vuelven a su estado original, como si nunca se hubieran marcado.
