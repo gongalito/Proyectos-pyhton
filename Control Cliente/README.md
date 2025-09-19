@@ -1,47 +1,50 @@
-# Sistema de Gestión de Pagos y Facturas
+# Payment and Invoice Management System
 
-Proyecto desarrollado para una pequeña empresa que permite **controlar pagos y facturas de clientes específicos** con formatos predefinidos de Excel.  
+Project developed for a small business to **manage customer payments and invoices** using predefined Excel formats.  
 
-Cuenta con una **interfaz gráfica amigable** y las siguientes funcionalidades:
+It includes a **user-friendly graphical interface** with the following features:
 
-- Crear estado de cuenta de un cliente  
-- Agregar pagos y estados de cuenta  
-- Visualización de facturas:  
-  - **Rojo:** no pagadas  
-  - **Verde:** pagadas  
-  - **Naranja:** diferencia de precio  
-- Filtrar facturas no pagadas o con diferencias  
-- Marcar facturas específicas como pagadas
+- Create a customer account statement  
+- Add payments and account statements  
+- View invoices:  
+  - **Red:** unpaid  
+  - **Green:** paid  
+  - **Orange:** price discrepancy  
+- Filter invoices that are unpaid or have discrepancies  
+- Mark specific invoices as paid  
 
----
-
-## Estructura de carpetas
-
-El proyecto requiere las siguientes carpetas para funcionar correctamente:
-- Agregar Control/           # Carpeta para agregar nuevos estados de cuenta
-- Agregar Pago/              # Carpeta para registrar pagos
-- CONTROL/                   # Carpeta principal donde se guardan los archivos de control
-- Data/
-    - Historial Control/         # Carpeta donde se almacenan los históricos de control
-    - Historial Pagos/           # Carpeta donde se almacenan los históricos de pagos
-    - FacturasNoPagadas/         # Carpeta para facturas no pagadas
-    - Copias de seguridad/       # Carpeta para respaldos de archivos
-    - Textos de ayuda/           # Carpeta con documentación y archivos de ayuda
+*More information is available in the program’s **Help** section.*
 
 ---
 
-## Tecnologías y librerías principales
+## Folder Structure
+
+The project requires the following folders to function correctly:
+
+- `Agregar Control/`  # Folder to add new account statements  
+- `Agregar Pago/`   # Folder to record payments  
+- `CONTROL/`      # Main folder where control files are stored  
+- `Data/`  
+  - `Historial Control/`   # Stores control history  
+  - `Historial Pagos/`    # Stores payment history  
+  - `FacturasNoPagadas/`   # Stores unpaid invoices  
+  - `Copias de seguridad/`  # Backup folder  
+  - `Textos de ayuda/`     # Documentation and help files (see the program’s **Help** section for details)
+
+---
+
+## Key Technologies and Libraries
 
 - **Python 3**  
-- **Pandas / Openpyxl** – manejo y formateo de Excel  
-- **CustomTkinter / Tkinter (ScrolledText)** – interfaz gráfica  
-- **OS, Shutil, Glob, Datetime, Calendar, Locale** – gestión de archivos y fechas  
+- **Pandas / Openpyxl** – Excel processing and formatting  
+- **CustomTkinter / Tkinter (ScrolledText)** – Graphical interface  
+- **OS, Shutil, Glob, Datetime, Calendar, Locale** – File and date management  
 
 ---
 
-
-## Uso
+## Usage
 
 ```bash
 pip install -r requirements.txt
 python main.py
+
